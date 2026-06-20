@@ -12,7 +12,7 @@ The goal of this project is to transition the School Immunization Program (SIP) 
 
 ## Status
 
-🚧 **This project is actively in development.**
+🚧 **This project is actively in development. **
 
 - [x] Parent consent form — Student Information section
 - [x] Parent consent form — Vaccination History section
