@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parent Forms</title>
+</head>
+<body>
+
+     <!-- Header-->
+    <header>
+        <h1>Student Vaccination Consent Form</h1>
+    </header>
+
+     <!-- Form-->
+    <form action="submit-form" method="post">
+    
+    <!-- Student Information -->
+    <fieldset>
+        <legend> Student Information</legend>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="cardNumber">ID Card</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="female">Female</label>
+             <input type="radio" id="female" name="gender" value="female">
+
+        </fieldset>
+
+          <label for="dob">Date of Birth</label>
+            <input type="date">
+
+                <label for="school">School</label>
+                <input type="text" id="school" name="school" list="schools">
+
+                <datalist id="schools">
+                <option value="Harvard University">
+                <option value="Stanford University">
+                <option value="Massachusetts Institute of Technology">
+                <option value="University of Toronto">
+                <option value="Western Kentucky University">
+            </datalist>
+
+            <label for="class">Class</label>
+            <input type="text" id="school" name="school">
+
+            <label for="teacher">Teacher</label>
+            <input type="text" id="teacher" name="teacher">
+
+            <label for="parent">Parent/Legal Guardian Name</label>
+            <input type="text" id="parent" name="parent">
+
+            <label for="parentPhone">Parent/Legal Guardian Phone</label>
+            <input type="tel" id="parent" name="parentPhone" maxlength="10" >
+        
+    </fieldset>
+
+    <!-- Student Vaccine History -->
+   <fieldset>
+    <legend>Student Vaccination History</legend>
+    <p>Please indicate which vaccines the student has previously received outside of the school program.</p>
+
+   <ol>
+    <li>Meningococcal-ACYW Vaccine</li>
+    <div class="checkbox">
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="menactra" name="menactra">
+                <label for="menactra">Menactra</label>
+            </div>
+            <input type="date" id="menactraDate" name="menactraDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="menveo" name="menveo">
+                <label for="menveo">MenveoTM</label>
+            </div>
+            <input type="date" id="menveoDate" name="menveoDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="menQuadfi" name="menQuadfi">
+                <label for="menQuadfi">MenQuadfi</label>
+            </div>
+            <input type="date" id="menQuadfiDate" name="menQuadfiDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="nimenrix" name="nimenrix">
+                <label for="nimenrix">Nimenrix</label>
+            </div>
+            <input type="date" id="nimenrixDate" name="nimenrixDate">
+        </div>
+    </div>
+
+    <li>Human Papillomavirus (HPV) Vaccine — 2 or 3 dose series</li>
+    <div class="checkbox">
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="gardasil" name="gardasil">
+                <label for="gardasil">Gardasil</label>
+            </div>
+            <input type="date" id="gardasilDate" name="gardasilDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="gardasil9" name="gardasil9">
+                <label for="gardasil9">Gardasil-9</label>
+            </div>
+            <input type="date" id="gardasil9Date" name="gardasil9Date">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="cervarix" name="cervarix">
+                <label for="cervarix">Cervarix</label>
+            </div>
+            <input type="date" id="cervarixDate" name="cervarixDate">
+        </div>
+    </div>
+
+    <li>Hepatitis B Vaccine — 2, 3 or 4 dose series</li>
+    <div class="checkbox">
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="engerix" name="engerix">
+                <label for="engerix">Engerix*</label>
+            </div>
+            <input type="date" id="engerixDate" name="engerixDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="recombivax" name="recombivax">
+                <label for="recombivax">Recombivax-HB*</label>
+            </div>
+            <input type="date" id="recombivaxDate" name="recombivaxDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="twinrix" name="twinrix">
+                <label for="twinrix">Twinrix*</label>
+            </div>
+            <input type="date" id="twinrixDate" name="twinrixDate">
+        </div>
+        <div class="checkbox-item">
+            <div class="checkbox-row">
+                <input type="checkbox" id="pediarix" name="pediarix">
+                <label for="pediarix">Pediarix*</label>
+            </div>
+            <input type="date" id="pediarixDate" name="pediarixDate">
+        </div>
+    </div>
+</ol>
+
+</fieldset>
+
+
+<fieldset>
+    <legend>Health History</legend>
+    <ol class="mcqol">
+
+        <div class="mcq">
+            <div class="mcq-question">
+                <li>Is the student allergic to yeast, alum, latex, diphtheria or tetanus toxoid protein? Or any other allergies?</li>
+            </div>
+            <div class="mcq-options">
+                <input type="radio" id="allergyYes" name="allergy" value="yes">
+                <label for="allergyYes">Yes</label>
+                <input type="radio" id="allergyNo" name="allergy" value="no">
+                <label for="allergyNo">No</label>
+            </div>
+        </div>
+
+        <div class="mcq">
+            <div class="mcq-question">
+                <li>Has the student ever had a reaction to a vaccine?</li>
+            </div>
+            <div class="mcq-options">
+                <input type="radio" id="vaccineReactionYes" name="vaccineReaction" value="yes">
+                <label for="vaccineReactionYes">Yes</label>
+                <input type="radio" id="vaccineReactionNo" name="vaccineReaction" value="no">
+                <label for="vaccineReactionNo">No</label>
+            </div>
+        </div>
+
+        <div class="mcq">
+            <div class="mcq-question">
+                <li>Does the student have a history of fainting?</li>
+            </div>
+            <div class="mcq-options">
+                <input type="radio" id="faintingYes" name="fainting" value="yes">
+                <label for="faintingYes">Yes</label>
+                <input type="radio" id="faintingNo" name="fainting" value="no">
+                <label for="faintingNo">No</label>
+            </div>
+        </div>
+
+        <div class="mcq">
+            <div class="mcq-question">
+                <li>Does the student have a weak immune system, or take medication that weakens the immune system or increases risk of infection?</li>
+            </div>
+            <div class="mcq-options">
+                <input type="radio" id="immuneSystemYes" name="immuneSystem" value="yes">
+                <label for="immuneSystemYes">Yes</label>
+                <input type="radio" id="immuneSystemNo" name="immuneSystem" value="no">
+                <label for="immuneSystemNo">No</label>
+            </div>
+        </div>
+
+        <div class="mcq">
+            <div class="mcq-question">
+                <li>Does the student have a serious medical condition?</li>
+            </div>
+            <div class="mcq-options">
+                <input type="radio" id="seriousConditionYes" name="seriousCondition" value="yes">
+                <label for="seriousConditionYes">Yes</label>
+                <input type="radio" id="seriousConditionNo" name="seriousCondition" value="no">
+                <label for="seriousConditionNo">No</label>
+            </div>
+        </div>
+
+    </ol>
+</fieldset>
+    
+    <fieldset>
+        <legend>Consent for Vaccination</legend>
+        <p>Please read each vaccine description carefully and provide your consent decision for each vaccine below.</p>
+        <p><span style="font-weight: 600;">Note:</span> Consent is required for each vaccine separately. You may consent to some and decline others.</p>
+
+     <ul class="consent">
+    <li>Meningococcal Vaccine (1 dose)</li>
+    <div class="mcq-options">
+        <input type="radio" id="meningococcalYes" name="meningococcal" value="yes">
+        <label for="meningococcalYes">Yes</label>
+        <input type="radio" id="meningococcalNo" name="meningococcal" value="no">
+        <label for="meningococcalNo">No</label>
+    </div>
+
+    <li>Human Papillomavirus (HPV) Vaccine (2 or 3 doses)</li>
+    <div class="mcq-options">
+        <input type="radio" id="hpvYes" name="hpv" value="yes">
+        <label for="hpvYes">Yes</label>
+        <input type="radio" id="hpvNo" name="hpv" value="no">
+        <label for="hpvNo">No</label>
+    </div>
+
+    <li>Hepatitis B Vaccine (2 or 3 doses)</li>
+    <div class="mcq-options">
+        <input type="radio" id="hepBYes" name="hepB" value="yes">
+        <label for="hepBYes">Yes</label>
+        <input type="radio" id="hepBNo" name="hepB" value="no">
+        <label for="hepBNo">No</label>
+    </div>
+</ul>
+
+    </fieldset>
+
+    </form>
+
+    <!-- Footer-->
+    <footer>
+        <p>© 2026. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

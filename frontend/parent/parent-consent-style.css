@@ -1,0 +1,63 @@
+/* Global reset - always put this first */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+form {
+    text-align: left; 
+  
+} 
+
+form input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 6px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.checkbox-item{
+    margin-bottom: 30px;
+}
+
+.mcq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mcq-question {
+    flex: 1;
+}
+
+.mcq-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.consent li{
+    margin-top: 30px;
+}
+
