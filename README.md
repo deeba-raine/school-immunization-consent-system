@@ -4,6 +4,11 @@
 SIP-APP is a full-stack electronic consent management system. 
 The goal of this project is to transition the School Immunization Program (SIP) from a paper-based vaccine consent process to an electronic consent (eConsent) approach in order to streamline consent management, improve SIP vaccination rates among students, reduce resource consumption, and align with the increased adoption of e-health solutions.
 
+This project is being built incrementally: starting with core consent form 
+functionality (MVP), then expanding to include role-based staff portals for 
+nurses and admins, authentication, and full database integration. See the 
+**Status** section below for current progress.
+
 ## Problem
 
 The current paper-based consent process for SIP is resource-intensive: 
